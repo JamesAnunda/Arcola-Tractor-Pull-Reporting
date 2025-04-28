@@ -8,6 +8,7 @@ import Home from "@/pages/home";
 import FoodPage from "@/pages/food";
 import DrinksPage from "@/pages/drinks";
 import MerchandisePage from "@/pages/merchandise";
+import InventoryCountPage from "@/pages/inventory-count";
 import ReportsPage from "@/pages/reports";
 import SettingsPage from "@/pages/settings";
 import { Helmet } from "react-helmet";
@@ -19,6 +20,7 @@ function Router() {
       <Route path="/food" component={FoodPage} />
       <Route path="/drinks" component={DrinksPage} />
       <Route path="/merchandise" component={MerchandisePage} />
+      <Route path="/inventory-count" component={InventoryCountPage} />
       <Route path="/reports" component={ReportsPage} />
       <Route path="/settings" component={SettingsPage} />
       {/* Fallback to 404 */}

@@ -1,6 +1,7 @@
 import { Link, useLocation } from "wouter";
 import { 
   BarChart,
+  Clipboard,
   Coffee,
   Home, 
   Menu, 
@@ -35,6 +36,7 @@ export default function Sidebar({ activeRoute }: SidebarProps) {
     { name: "Food", path: "/food", icon: <Coffee className="mr-3 h-5 w-5" />, id: "food" },
     { name: "Drinks", path: "/drinks", icon: <Coffee className="mr-3 h-5 w-5" />, id: "drinks" },
     { name: "Merchandise", path: "/merchandise", icon: <ShoppingBag className="mr-3 h-5 w-5" />, id: "merchandise" },
+    { name: "Inventory Count", path: "/inventory-count", icon: <Clipboard className="mr-3 h-5 w-5" />, id: "inventory-count" },
     { name: "Reports", path: "/reports", icon: <BarChart className="mr-3 h-5 w-5" />, id: "reports" },
     { name: "Settings", path: "/settings", icon: <Settings className="mr-3 h-5 w-5" />, id: "settings" },
   ];

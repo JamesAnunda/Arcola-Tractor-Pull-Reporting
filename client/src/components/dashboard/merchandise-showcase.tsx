@@ -16,12 +16,13 @@ export default function MerchandiseShowcase() {
     <div className="mb-6">
       <div className="flex justify-between items-center mb-4">
         <h3 className="text-xl font-medium text-secondary">Merchandise Showcase</h3>
-        <Link href="/merchandise">
-          <a className="text-primary hover:underline flex items-center">
-            View all merchandise
-            <MoveRight className="ml-1 h-4 w-4" />
-          </a>
-        </Link>
+        <div 
+          className="text-primary hover:underline flex items-center cursor-pointer"
+          onClick={() => window.location.href = "/merchandise"}
+        >
+          View all merchandise
+          <MoveRight className="ml-1 h-4 w-4" />
+        </div>
       </div>
       
       {isLoading ? (
