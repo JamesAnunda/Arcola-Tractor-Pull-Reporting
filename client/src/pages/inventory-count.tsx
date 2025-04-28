@@ -146,7 +146,7 @@ export default function InventoryCountPage() {
                     onClick={initializeCounts}
                     disabled={isLoading}
                   >
-                    <ClipboardCheck className="mr-2 h-4 w-4" />
+                    <Clipboard className="mr-2 h-4 w-4" />
                     Initialize Counts
                   </Button>
                   <Button 

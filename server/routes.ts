@@ -192,6 +192,45 @@ export async function registerRoutes(app: Express): Promise<Server> {
     }
   });
   
+  // Bulk update inventory counts
+  app.post("/api/inventory/update-counts", async (req: Request, res: Response) => {
+    try {
+      const { updates } = req.body;
+      
+      if (!Array.isArray(updates)) {
+        return res.status(400).json({ message: "Invalid updates format" });
+      }
+      
+      const results = [];
+      
+      for (const update of updates) {
+        const { id, stockQuantity } = update;
+        
+        if (!id || typeof stockQuantity !== 'number' || stockQuantity < 0) {
+          return res.status(400).json({ 
+            message: `Invalid update data for item id: ${id}` 
+          });
+        }
+        
+        const updatedItem = await storage.updateInventoryItem(id, { stockQuantity });
+        
+        if (!updatedItem) {
+          return res.status(404).json({ message: `Item with id ${id} not found` });
+        }
+        
+        results.push(updatedItem);
+      }
+      
+      res.json({ 
+        success: true, 
+        message: `Successfully updated ${results.length} items`,
+        items: results 
+      });
+    } catch (error) {
+      res.status(500).json({ message: "Failed to update inventory counts" });
+    }
+  });
+  
   // Dashboard metrics
   app.get("/api/metrics", async (_req: Request, res: Response) => {
     try {
