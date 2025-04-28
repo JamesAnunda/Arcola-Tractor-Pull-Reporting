@@ -45,7 +45,7 @@ export default function Sidebar({ activeRoute }: SidebarProps) {
     <div className="flex flex-col h-full">
       <div className="p-4">
         <div className="flex items-center justify-between">
-          <span className="text-lg font-medium">Square Inventory</span>
+          <span className="text-lg font-medium">Arcola Tractor Pulls</span>
           {isMobile && (
             <Button variant="ghost" size="icon" onClick={() => setOpen(false)} className="lg:hidden">
               <X className="h-5 w-5" />
