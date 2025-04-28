@@ -55,18 +55,16 @@ export default function Sidebar({ activeRoute }: SidebarProps) {
         <ul>
           {navItems.map((item) => (
             <li key={item.id}>
-              <Link href={item.path}>
-                <a
-                  className={cn(
-                    "flex items-center px-4 py-3 hover:bg-white/10",
-                    activeRoute === item.id && "bg-primary/20 border-l-4 border-primary"
-                  )}
-                  onClick={() => setLocation(item.path)}
-                >
-                  {item.icon}
-                  <span>{item.name}</span>
-                </a>
-              </Link>
+              <div
+                onClick={() => setLocation(item.path)}
+                className={cn(
+                  "flex items-center px-4 py-3 hover:bg-white/10 cursor-pointer",
+                  activeRoute === item.id && "bg-primary/20 border-l-4 border-primary"
+                )}
+              >
+                {item.icon}
+                <span>{item.name}</span>
+              </div>
             </li>
           ))}
         </ul>
@@ -99,7 +97,7 @@ export default function Sidebar({ activeRoute }: SidebarProps) {
         </Button>
         
         <Sheet open={open} onOpenChange={setOpen}>
-          <SheetContent side="left" className="p-0 w-64 bg-secondary text-white">
+          <SheetContent side="left" className="p-0 w-64 bg-[#1E293B] text-white">
             <SidebarContent />
           </SheetContent>
         </Sheet>
@@ -109,7 +107,7 @@ export default function Sidebar({ activeRoute }: SidebarProps) {
 
   // Desktop sidebar
   return (
-    <aside className="w-64 bg-secondary text-white hidden lg:block transition-all duration-300">
+    <aside className="w-64 bg-[#1E293B] text-white hidden lg:block transition-all duration-300">
       <SidebarContent />
     </aside>
   );
