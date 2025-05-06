@@ -31,7 +31,7 @@ export default function DrinksPage() {
   return (
     <>
       <Helmet>
-        <title>Drinks Inventory | Square Inventory Manager</title>
+        <title>Drinks Inventory | Arcola Tractor Pull Invenotry Mangement</title>
       </Helmet>
       
       <div className="flex flex-col h-screen">

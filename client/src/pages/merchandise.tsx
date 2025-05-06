@@ -31,7 +31,7 @@ export default function MerchandisePage() {
   return (
     <>
       <Helmet>
-        <title>Merchandise | Square Inventory Manager</title>
+        <title>Merchandise | Arcola Tractor Pull Invenotry Mangement</title>
       </Helmet>
       
       <div className="flex flex-col h-screen">

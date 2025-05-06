@@ -76,7 +76,7 @@ export default function SettingsPage() {
   return (
     <>
       <Helmet>
-        <title>Settings | Square Inventory Manager</title>
+        <title>Settings | Arcola Tractor Pull Invenotry Mangement</title>
       </Helmet>
       
       <div className="flex flex-col h-screen">

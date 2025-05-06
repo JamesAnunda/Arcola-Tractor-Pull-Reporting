@@ -1,6 +1,6 @@
 # Installation and Setup Guide
 
-This guide provides detailed instructions for setting up the Square Inventory Manager application on your system.
+This guide provides detailed instructions for setting up the Arcola Tractor Pull Invenotry Mangement application on your system.
 
 ## System Requirements
 

@@ -31,7 +31,7 @@ export default function FoodPage() {
   return (
     <>
       <Helmet>
-        <title>Food Inventory | Square Inventory Manager</title>
+        <title>Food Inventory | Arcola Tractor Pull Invenotry Mangement</title>
       </Helmet>
       
       <div className="flex flex-col h-screen">

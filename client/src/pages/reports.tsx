@@ -24,7 +24,7 @@ export default function ReportsPage() {
   return (
     <>
       <Helmet>
-        <title>Reports | Square Inventory Manager</title>
+        <title>Reports | Arcola Tractor Pull Invenotry Mangement</title>
       </Helmet>
       
       <div className="flex flex-col h-screen">

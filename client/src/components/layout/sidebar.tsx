@@ -77,7 +77,7 @@ export default function Sidebar({ activeRoute }: SidebarProps) {
             <ShoppingBag className="h-5 w-5" />
           </div>
           <div>
-            <p className="text-sm font-medium">Downtown Cafe</p>
+            <p className="text-sm font-medium">Arcola Tractor Pull</p>
             <p className="text-xs opacity-70">Connected to Square</p>
           </div>
         </div>

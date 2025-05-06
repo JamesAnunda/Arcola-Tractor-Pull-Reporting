@@ -1,4 +1,4 @@
-# Square Inventory Manager
+# Arcola Tractor Pull Invenotry Mangement
 
 A comprehensive inventory management system that connects to Square API to track and manage inventory for food, drinks, and merchandise. This application helps businesses manage their stock levels, view purchase history, and track sales trends.
 

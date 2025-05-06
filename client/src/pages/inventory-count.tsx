@@ -124,7 +124,7 @@ export default function InventoryCountPage() {
   return (
     <>
       <Helmet>
-        <title>Inventory Count | Square Inventory Manager</title>
+        <title>Inventory Count | Arcola Tractor Pull Invenotry Mangement</title>
       </Helmet>
       
       <div className="flex flex-col h-screen">

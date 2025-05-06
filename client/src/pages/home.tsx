@@ -26,7 +26,7 @@ export default function Home() {
   return (
     <>
       <Helmet>
-        <title>Dashboard | Square Inventory Manager</title>
+        <title>Dashboard | Arcola Tractor Pull Invenotry Mangement</title>
       </Helmet>
       
       <div className="flex flex-col h-screen">
